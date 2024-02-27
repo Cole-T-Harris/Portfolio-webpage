@@ -9,7 +9,6 @@ interface CardProps {
 const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
   const domRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -24,20 +23,18 @@ const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
     return () => observer.disconnect()
   }, [domRef]);
   return (
-      <div
-        ref={domRef}
-        className={`rounded p-4 shadow-lg card ${isVisible ? 'isVisibile' : ''} ${isHovered ? 'hovered' : ''}`}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <div className="flex flex-col gap-2">
-          <a href='#'>
-            <div className='logo-container'>
-              <img src={viteLogo} className="logo" alt="Vite logo" />
-            </div>
-            <h2 className="text-xl font-bold">{title}</h2>
-            <p>{content}</p>
-          </a>
+      <div 
+        ref={domRef} 
+        className={`col-12 col-md-6 col-lg-4 card-styling ${isVisible ? 'isVisibile' : ''} d-flex justify-content-center`}>
+        <div
+          className='rounded shadow-lg card scale-on-hover card-background'
+        >
+          <img src={viteLogo} className="card-img-top" alt="..."/>
+          <div className="card-body">
+            <h5 className="card-title">{title}</h5>
+            <p className="card-text">{content}</p>
+            <a href="#" className="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
   );

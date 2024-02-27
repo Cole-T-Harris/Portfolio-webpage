@@ -1,33 +1,34 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 #root {
+  background-color: #040D12;
+  color: rgba(255, 255, 255, 0.87);
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
 
-.card {
-  background-color: #525252;
-  margin: 10px;
-  padding: 2em;
+.btn-spacing {
+  margin: 2em 1em 1em 0
+}
+
+.card-background {
+  background-color: rgb(119, 211, 218) !important;
+  color: black !important;
+}
+
+.card-styling {
+  margin: 3rem 0 3rem 0;
   opacity: 0;
   transform: translate(0, 50%);
   visibility: hidden;
   transition: opacity 300ms ease-out, transform 300ms ease-out;
 }
 
-.card.isVisibile {
+.card-styling.isVisibile {
   opacity: 1;
   transform: none;
   visibility: visible;
   display: flex; 
-}
-
-.card.hovered {
-  transform: scale(1.05);
 }
 
 .logo-container {
@@ -43,12 +44,17 @@
 }
 
 .greeting {
-  padding-top: 15em;
-  padding-bottom: 15em;
+  padding-top: 10em;
+  padding-bottom: 10em;
 }
 
 .greeting span {
   color: rgb(0, 189, 202);
+}
+
+.scale-on-hover:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-out;
 }
 
 @media (prefers-reduced-motion: no-preference) {

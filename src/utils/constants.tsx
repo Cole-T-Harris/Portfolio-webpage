@@ -6,3 +6,5 @@ export const ASPIRING_JOB_TITLES = [
     'Cloud Engineering',
     'DevOps Engineering'
 ]
+
+export const BACKGROUND_COLOR = "#040D12"
