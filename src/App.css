@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -6,9 +10,9 @@
 }
 
 .card {
-  background-color: #e0e0e0;
+  background-color: #525252;
   margin: 10px;
-  padding: 10px;
+  padding: 2em;
   opacity: 0;
   transform: translate(0, 50%);
   visibility: hidden;
@@ -38,23 +42,19 @@
   max-height: 100%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.greeting {
+  padding-top: 15em;
+  padding-bottom: 15em;
+}
+
+.greeting span {
+  color: rgb(0, 189, 202);
 }
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.card {
-  padding: 2em;
 }
 
 .read-the-docs {

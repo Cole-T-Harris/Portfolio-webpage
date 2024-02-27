@@ -35,8 +35,8 @@ const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
             <div className='logo-container'>
               <img src={viteLogo} className="logo" alt="Vite logo" />
             </div>
-            <h2 className="text-xl font-bold text-blue-700">{title}</h2>
-            <p className="text-gray-600">{content}</p>
+            <h2 className="text-xl font-bold">{title}</h2>
+            <p>{content}</p>
           </a>
         </div>
       </div>

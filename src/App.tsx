@@ -1,9 +1,13 @@
 import './App.css'
-import Projects from './components/projects'
+import Greeting from './components/Greeting/greeting'
+import Projects from './components/Projects/projects'
 
 function App() {
   return (
-    <Projects/>
+    <>
+      <Greeting/>
+      <Projects/>
+    </>
   )
 }
 
