@@ -52,17 +52,31 @@
   color: rgb(0, 189, 202);
 }
 
+.greeting button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+
+  color: rgb(0, 189, 202);
+  transition: 0.25s;
+}
+
+.greeting button:hover,
+.greeting button:focus {
+  border-color: rgb(1, 238, 255);
+  color: #fff;
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em;
+  transform: translateY(-0.25em);
+}
+
 .scale-on-hover:hover {
   transform: scale(1.05);
   transition: transform 0.3s ease-out;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.read-the-docs {
-  color: #888;
 }
