@@ -1,12 +1,24 @@
 import { Dispatch, SetStateAction } from "react";
 import { ReactTyped } from 'react-typed';
-import { ASPIRING_JOB_TITLES } from "../../utils/constants"
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { ASPIRING_JOB_TITLES, LINKEDIN_URL, GITHUB_URL } from "../../utils/constants"
 
 interface GreetingsProps {
     setViewProjects: Dispatch<SetStateAction<boolean>>
+    setViewResume: Dispatch<SetStateAction<boolean>>
 }
 
-const Greeting: React.FC<GreetingsProps> = ({setViewProjects}) => {
+const Greeting: React.FC<GreetingsProps> = ({setViewProjects, setViewResume}) => {
+    const handleProjectsClick = () => {
+      setViewResume(false)
+      setViewProjects(true)
+    }
+
+    const handleResumeClick = () => {
+      setViewResume(true)
+      setViewProjects(false)
+    }
+
     return (
       <div className="greeting">
         <h1>Hi, I'm <span>Cole Harris</span></h1>
@@ -20,9 +32,15 @@ const Greeting: React.FC<GreetingsProps> = ({setViewProjects}) => {
             />{' '}
         </h2>
         <button className="raise btn-spacing" 
-            onClick={() => setViewProjects(false)}>Resume</button>
+            onClick={handleResumeClick}>Resume</button>
         <button className="raise btn-spacing" 
-            onClick={() => setViewProjects(true)}>Projects</button>
+            onClick={handleProjectsClick}>Projects</button>
+        <div className="networks">
+          <div className="netbox">
+            <a className="icon" href={LINKEDIN_URL}><IoLogoLinkedin size={40}/></a>
+            <a className="icon" href={GITHUB_URL}><IoLogoGithub size={40}/></a>
+          </div>
+        </div>
       </div>
     )
   }

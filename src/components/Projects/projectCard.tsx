@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import viteLogo from '/images/AWS-Cloud.png'
+import viteLogo from '../../static/images/AWS-Cloud.png'
 
 interface CardProps {
   title: string;
