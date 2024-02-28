@@ -18,15 +18,14 @@ const Resume = () => {
     return (
         <div className='resume'>
             <h2>
-                I am a <span>recent Computer Science graduate</span> and formerly a Controls Engineer with a Chemical Engineering background.
-                I have many different <span>interests ranging from Software Engineering to Cloud engineering</span>. What all of it has in common
-                is that <span>I have a passion and eagerness to learn new technologies</span>.
+              I am a <span>recent Computer Science graduate</span> and formerly a Controls Engineer with a Chemical Engineering background. 
+              I have many different <span>interests ranging from Software Engineering to Cloud Engineering</span>. What all of it has in 
+              common is that <span>I have a passion and eagerness to learn new technologies</span>.
             </h2>
             <h2>
-                I bring a unique skillset of having a Computer science and Chemical Engineering degree and having worked in industry formerly
-                as a Chemical Engineer (Controls Engineer). If you want to learn more about me you can select about me page or navigate
-                to my resume webpage!
-
+              I bring a unique skill set of having a Computer science and Chemical Engineering degree and having worked in the industry 
+              formerly as a Chemical Engineer (Controls Engineer). If you want to learn more about me you can select about me or navigate 
+              to my resume webpage!
             </h2>
             <button className='raise' onClick={() => setOpenAboutModal(true)}>About Me</button>
             <a href='/resume'><button className='raise'>Resume Webpage</button></a>
