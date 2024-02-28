@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
 import resumeFile from '../../static/Website_Resume.pdf'
+import AboutMeModal from './aboutMeModal';
 
 const Resume = () => {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+    const [openAboutModal, setOpenAboutModal] = useState(false)
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
@@ -26,8 +28,8 @@ const Resume = () => {
                 to my resume webpage!
 
             </h2>
-            <button className='raise'>About Me</button>
-            <button className='raise'>Resume Webpage</button>
+            <button className='raise' onClick={() => setOpenAboutModal(true)}>About Me</button>
+            <a href='/resume'><button className='raise'>Resume Webpage</button></a>
             <div className='resume-pdf'>
                 {windowWidth >= 800 ?
                     <embed src={resumeFile} width="800px" height="1150"/>
@@ -37,6 +39,7 @@ const Resume = () => {
                     </a>
                 }
             </div>
+            <AboutMeModal modalOpen={openAboutModal} setModalOpen={setOpenAboutModal}/>
         </div>
     )
   }

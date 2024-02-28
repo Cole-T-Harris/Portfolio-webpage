@@ -1,6 +1,22 @@
 {
     "projects": [
         {
+            "title": "Portfolio Webpage",
+            "quickDescription" : "Portfolio webpage using Typscript and React",
+            "description": "I built a new landing page for website to provide a simpilar and more animated portfolio from the existing static resume webpage.\n\nThis new webpage was built utilizing Typscript and React with styling from Bootstrap. The webpage initially is a vite react typscript template.\n\nTo host this webpage, the built app is stored on an S3 bucket and then server from AWS cloudfront from the root directory.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/Portfolio-webpage",
+            "image": "Portfolio-Webpage.png",
+            "techstack": {
+                "Languages": ["Typscript"],
+                "Web Technologies": ["React", "Bootstrap", "NPM", "CSS"],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio"],
+                "Database": [],
+                "Frameworks": [],
+                "Operating Systems": [],
+                "Cloud": ["AWS IAM", "AWS S3", "AWS CloudFront", "AWS Route 53"]
+            }
+        },
+        {
             "title": "Serverless AWS REST API",
             "quickDescription" : "Built a serverless AWS REST API, with Python, AWS Lambda and AWS API Gateway",
             "description": "Transformed the FastAPI REST API, previously hosted on a Linux EC2 instance, into a serverless architecture on AWS. This involved refactoring the codebase and deploying multiple AWS Lambda functions, seamlessly integrated with an AWS API Gateway.",
@@ -37,11 +53,11 @@
             "quickDescription" : "React app that sends API requests to fastAPI (previously Django) backend RESTful API that sends OAuth2.0 authenticated API requests to Kroger. Provides current store data and can export ordered list.",
             "description": "React app that sends API requests to FastAPI (previously Django project below) backend RESTful API that sends OAUTH2.0 authenticated API requests to Kroger.\n\nProvides current store data and can export ordered grocery lists.",
             "gitHubLink": "https://github.com/Cole-T-Harris/fastapi-pw-api",
-            "link": "https://www.coleharris.dev/grocery_app/",
+            "link": "/grocery_app/",
             "image": "Grocery_App.png",
             "techstack": {
                 "Languages": ["Javascript"],
-                "Web Technologies": ["React.js", "HTML", "CSS", "Bootstrap", "Webpack"],
+                "Web Technologies": ["React.js", "HTML", "SCSS", "Bootstrap", "Webpack", "NPM"],
                 "Tools & Software": ["Git", "GitHub", "Github Actions", "Visual Studio"],
                 "Database": [],
                 "Frameworks": [],
@@ -75,6 +91,23 @@
                 "Languages": ["Python"],
                 "Web Technologies": [],
                 "Tools & Software": ["Git", "GitHub", "Jupyter Notebook", "Google Colab", "Tensorflow"],
+                "Database": [],
+                "Frameworks": [],
+                "Operating Systems": [],
+                "Cloud": []
+            }
+        },
+        {
+            "title": "Static Bootstrap Personal Webpage",
+            "quickDescription" : "Static resume personal webpage builting utilizing bootstrap and other basic web technologies.",
+            "description": "I built a static webpage to showcase my professional experience and achievements. This was all built utilizing HTML, CSS, and Javascript.\n\nThe website is built utilizing bootstrap and custom CSS sytling as well as a Javascript script that utilzes jQuery to add onscreen effects.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/Personal-Website",
+            "link": "/resume",
+            "image": "Static-Personal-Webpage.png",
+            "techstack": {
+                "Languages": ["HTML", "CSS", "Javascript"],
+                "Web Technologies": ["Jquery", "Bootstrap"],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio"],
                 "Database": [],
                 "Frameworks": [],
                 "Operating Systems": [],

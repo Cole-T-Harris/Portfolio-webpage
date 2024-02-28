@@ -7,6 +7,10 @@
   text-align: center;
 }
 
+.about-me p {
+  font-size: 20px;
+}
+
 .btn-spacing {
   margin: 2em 1em 1em 0
 }
@@ -33,10 +37,6 @@
   transform: none;
   visibility: visible;
   display: flex; 
-}
-
-.custom-collapse {
-  overflow: hidden;
 }
 
 .learn-more-button {
