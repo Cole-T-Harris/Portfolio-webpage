@@ -44,10 +44,6 @@
   font-size: 1rem;
   letter-spacing: 0.15rem;
   transition: all 0.3s;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 10px;
   z-index: 1;
   text-decoration: none;
 }
@@ -83,6 +79,13 @@
 
 .learn-more-button:hover:before {
   width: 100%;
+}
+
+.learn-more-button-location {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 10px;
 }
 
 .logo-container {
@@ -216,4 +219,11 @@
   font-size: 1rem;
   padding-left: 10px;
   background-color: #040D12;
+}
+
+.project-link-button-location {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
 }

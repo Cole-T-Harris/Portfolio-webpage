@@ -40,14 +40,14 @@ const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, 
           <div className="card-body text-start">
             <h5 className="card-title">{title}</h5>
             <p className="card-text card-content">{content}</p>
-            <button className='learn-more-button' onClick={() => setModalOpen(true)}>Learn More</button>
+            <button className='learn-more-button learn-more-button-location' onClick={() => setModalOpen(true)}>Learn More</button>
+            {link ? <a href={link} className='learn-more-button project-link-button-location'>Navigate To</a> : <></>}
             <ProjectCardModal
               title={title}
               content={content}
               image={image}
               description={description}
               gitHubLink={gitHubLink}
-              link={link}
               techStack={techStack}
               modalOpen={modalOpen}
               setModalOpen={setModalOpen}
