@@ -5,7 +5,7 @@
             "quickDescription" : "Built a serverless AWS REST API, with Python, AWS Lambda and AWS API Gateway",
             "description": "Transformed the FastAPI REST API, previously hosted on a Linux EC2 instance, into a serverless architecture on AWS. This involved refactoring the codebase and deploying multiple AWS Lambda functions, seamlessly integrated with an AWS API Gateway.",
             "gitHubLink": "https://github.com/Cole-T-Harris/personalwebsite-apigateway",
-            "image": "AWS-Lambda.png",
+            "image": "AWS-Lambda1.png",
             "techstack": {
                 "Languages": ["Python"],
                 "Web Technologies": ["RESTful API"],
@@ -24,7 +24,7 @@
             "image": "AWS-Cloud.png",
             "techstack": {
                 "Languages": ["Python"],
-                "Web Technologies": ["RESTful API, JSON, Swagger UI"],
+                "Web Technologies": ["RESTful API", "JSON", "Swagger UI"],
                 "Tools & Software": ["Docker", "Git", "GitHub", "GitHub Actions", "Visual Studio", "Postman"],
                 "Database": [],
                 "Frameworks": ["FastAPI"],
@@ -58,7 +58,7 @@
             "techstack": {
                 "Languages": ["Python"],
                 "Web Technologies": ["RESTful API"],
-                "Tools & Software": ["Git", "GitHub", "Visual Studio"],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio", "Postman"],
                 "Database": ["MySQL"],
                 "Frameworks": ["Django"],
                 "Operating Systems": [],

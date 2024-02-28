@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import ProjectCardModal from './projectModal';
 
 interface CardProps {
   title: string;
@@ -13,6 +14,7 @@ interface CardProps {
 const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, gitHubLink, link, techStack }) => {
   const domRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
@@ -38,7 +40,18 @@ const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, 
           <div className="card-body text-start">
             <h5 className="card-title">{title}</h5>
             <p className="card-text card-content">{content}</p>
-            <a href="#" className='learn-more-button'>Learn More</a>
+            <button className='learn-more-button' onClick={() => setModalOpen(true)}>Learn More</button>
+            <ProjectCardModal
+              title={title}
+              content={content}
+              image={image}
+              description={description}
+              gitHubLink={gitHubLink}
+              link={link}
+              techStack={techStack}
+              modalOpen={modalOpen}
+              setModalOpen={setModalOpen}
+            />
           </div>
         </div>
       </div>
