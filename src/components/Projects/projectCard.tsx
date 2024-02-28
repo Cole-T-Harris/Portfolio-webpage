@@ -28,7 +28,6 @@ const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, 
     }
     return () => observer.disconnect()
   }, [domRef]);
-  console.log(description, gitHubLink, link, techStack)
   return (
       <div 
         ref={domRef} 
@@ -44,7 +43,6 @@ const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, 
             {link ? <a href={link} className='learn-more-button project-link-button-location'>Navigate To</a> : <></>}
             <ProjectCardModal
               title={title}
-              content={content}
               image={image}
               description={description}
               gitHubLink={gitHubLink}

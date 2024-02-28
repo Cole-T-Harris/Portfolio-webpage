@@ -5,7 +5,6 @@ import { IoLogoGithub } from "react-icons/io";
 
 interface CardProps {
   title: string;
-  content: string;
   image: string;
   description: string;
   gitHubLink: string;
@@ -14,10 +13,9 @@ interface CardProps {
   setModalOpen: Dispatch<SetStateAction<boolean>>;
 }
 
-const ProjectCardModal: React.FC<CardProps> = ({ title, content, image, description, gitHubLink, techStack, modalOpen, setModalOpen }) => {
-    console.log(title,content,image,description,gitHubLink,techStack, modalOpen)
+const ProjectCardModal: React.FC<CardProps> = ({ title, image, description, gitHubLink, techStack, modalOpen, setModalOpen }) => {
     const paragraphs = description.split('\n').map((paragraph, index) => (
-        <React.Fragment key={index}>
+        <React.Fragment key={uuidv4()}>
           {index > 0} {/* Add a <br /> except for the first paragraph */}
           <p>{paragraph}</p>
         </React.Fragment>
