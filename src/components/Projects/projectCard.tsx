@@ -1,12 +1,16 @@
 import React, { useEffect, useState, useRef } from 'react';
-import viteLogo from '../../static/images/AWS-Cloud.png'
 
 interface CardProps {
   title: string;
   content: string;
+  image: string;
+  description: string;
+  gitHubLink: string;
+  link: string | null;
+  techStack: object;
 }
 
-const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
+const ProjectCard: React.FC<CardProps> = ({ title, content, image, description, gitHubLink, link, techStack }) => {
   const domRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
@@ -22,6 +26,7 @@ const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
     }
     return () => observer.disconnect()
   }, [domRef]);
+  console.log(description, gitHubLink, link, techStack)
   return (
       <div 
         ref={domRef} 
@@ -29,11 +34,11 @@ const ProjectCard: React.FC<CardProps> = ({ title, content }) => {
         <div
           className='rounded shadow-lg card scale-on-hover card-background'
         >
-          <img src={viteLogo} className="card-img-top" alt="..."/>
-          <div className="card-body">
+          <img src={`/images/${image}`} className="card-img-top" alt="..."/>
+          <div className="card-body text-start">
             <h5 className="card-title">{title}</h5>
-            <p className="card-text">{content}</p>
-            <a href="#" className="btn btn-primary">Go somewhere</a>
+            <p className="card-text card-content">{content}</p>
+            <a href="#" className='learn-more-button'>Learn More</a>
           </div>
         </div>
       </div>

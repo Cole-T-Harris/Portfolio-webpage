@@ -1,0 +1,85 @@
+{
+    "projects": [
+        {
+            "title": "Serverless AWS REST API",
+            "quickDescription" : "Built a serverless AWS REST API, with Python, AWS Lambda and AWS API Gateway",
+            "description": "Transformed the FastAPI REST API, previously hosted on a Linux EC2 instance, into a serverless architecture on AWS. This involved refactoring the codebase and deploying multiple AWS Lambda functions, seamlessly integrated with an AWS API Gateway.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/personalwebsite-apigateway",
+            "image": "AWS-Lambda.png",
+            "techstack": {
+                "Languages": ["Python"],
+                "Web Technologies": ["RESTful API"],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio", "Postman"],
+                "Database": ["NoSQL"],
+                "Frameworks": [],
+                "Operating Systems": [],
+                "Cloud": ["AWS IAM", "AWS S3", "AWS Lambda", "AWS API Gateway", "AWS DynamoDB", "AWS CloudFormation", "AWS Route 53"]
+            }
+        },
+        {
+            "title": "Migrated Personal Website to AWS",
+            "quickDescription" : "Personal website migrated to AWS with a fastAPI backend in a docker container on an AWS EC2 instance. Frontend React app and static webpages are stored in AWS S3 buckets and served via AWS Cloudfront with DNS routing managed via Route 53",
+            "description": "Personal website migrated to AWS with a FastAPI backend in a docker container on an AWS EC2 instance.\n\nFastAPI (Python) RESTful API sends OAuth2.0 authenticated API requests to Kroger for store and product data to be displayed via a single page React web app (React grocery list web app project below).\n\nFrontend React app and static webpages are stored in AWS S3 and served via AWS Cloudfront with DNS routing managed via Route 53.\n\nBuilt a CI/CD pipeline by hosting code on Github and Github actions automating a FastAPI docker build and React app pushed to an AWS S3 bucket.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/fastapi-pw-api",
+            "image": "AWS-Cloud.png",
+            "techstack": {
+                "Languages": ["Python"],
+                "Web Technologies": ["RESTful API, JSON, Swagger UI"],
+                "Tools & Software": ["Docker", "Git", "GitHub", "GitHub Actions", "Visual Studio", "Postman"],
+                "Database": [],
+                "Frameworks": ["FastAPI"],
+                "Operating Systems": ["Linux"],
+                "Cloud": ["AWS IAM", "AWS S3", "AWS EC2", "AWS Route 53"]
+            }
+        },
+        {
+            "title": "React.js Grocery List Web App",
+            "quickDescription" : "React app that sends API requests to fastAPI (previously Django) backend RESTful API that sends OAuth2.0 authenticated API requests to Kroger. Provides current store data and can export ordered list.",
+            "description": "React app that sends API requests to FastAPI (previously Django project below) backend RESTful API that sends OAUTH2.0 authenticated API requests to Kroger.\n\nProvides current store data and can export ordered grocery lists.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/fastapi-pw-api",
+            "link": "https://www.coleharris.dev/grocery_app/",
+            "image": "Grocery_App.png",
+            "techstack": {
+                "Languages": ["Javascript"],
+                "Web Technologies": ["React.js", "HTML", "CSS", "Bootstrap", "Webpack"],
+                "Tools & Software": ["Git", "GitHub", "Github Actions", "Visual Studio"],
+                "Database": [],
+                "Frameworks": [],
+                "Operating Systems": [],
+                "Cloud": ["AWS IAM", "AWS S3", "AWS CloudFront", "AWS Route 53"]
+            }
+        },
+        {
+            "title": "Django API Backend",
+            "quickDescription" : "Django backend that serves webpages and react app and acts as a Restful API. Hosted utilizing Heroku with a custom domain forwarding to heroku app",
+            "description": "Django (Python framework) Backend that serves html web pages and react apps and is hosted utilizing Heroku a cloud hosting platform.\n\nAdditionally acts as a RESTful API to handle API requests for React Grocery List Web App.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/Django-FullStack-Website",
+            "image": "django_backend.jpg",
+            "techstack": {
+                "Languages": ["Python"],
+                "Web Technologies": ["RESTful API"],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio"],
+                "Database": ["MySQL"],
+                "Frameworks": ["Django"],
+                "Operating Systems": [],
+                "Cloud": ["Heroku"]
+            }
+        },
+        {
+            "title": "Convolutional Neural Network for Melanoma Classification on Skin Legion Images: ",
+            "quickDescription" : "Built a convolution neural network for utilizing tensorflow and transfer learning within a Jupyter Notebook to classify melanoma from skin legion images.",
+            "description": "Built a convolution neural network for utilizing tensorflow and transfer learning within a Jupyter Notebook to classify melanoma from skin legion images. ",
+            "gitHubLink": "https://github.com/Cole-T-Harris/CS345-Final-Project",
+            "image": "CS345ProjectAccuracy.png",
+            "techstack": {
+                "Languages": ["Python"],
+                "Web Technologies": [],
+                "Tools & Software": ["Git", "GitHub", "Jupyter Notebook", "Google Colab", "Tensorflow"],
+                "Database": [],
+                "Frameworks": [],
+                "Operating Systems": [],
+                "Cloud": []
+            }
+        }
+    ]
+}
