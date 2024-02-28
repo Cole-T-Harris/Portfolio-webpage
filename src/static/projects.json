@@ -102,7 +102,7 @@
             "quickDescription" : "Static resume personal webpage builting utilizing bootstrap and other basic web technologies.",
             "description": "I built a static webpage to showcase my professional experience and achievements. This was all built utilizing HTML, CSS, and Javascript.\n\nThe website is built utilizing bootstrap and custom CSS sytling as well as a Javascript script that utilzes jQuery to add onscreen effects.",
             "gitHubLink": "https://github.com/Cole-T-Harris/Personal-Website",
-            "link": "/resume",
+            "link": "/resume/",
             "image": "Static-Personal-Webpage.png",
             "techstack": {
                 "Languages": ["HTML", "CSS", "Javascript"],

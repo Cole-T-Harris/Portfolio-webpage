@@ -28,7 +28,7 @@ const Resume = () => {
               to my resume webpage!
             </h2>
             <button className='raise' onClick={() => setOpenAboutModal(true)}>About Me</button>
-            <a href='/resume'><button className='raise'>Resume Webpage</button></a>
+            <a href='/resume/'><button className='raise'>Resume Webpage</button></a>
             <div className='resume-pdf'>
                 {windowWidth >= 800 ?
                     <embed src={resumeFile} width="800px" height="1150"/>
