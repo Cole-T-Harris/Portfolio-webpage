@@ -1,6 +1,23 @@
 {
     "projects": [
         {
+            "title": "Commute Optimization Application",
+            "quickDescription" : "Application to pull google maps and store commute data.",
+            "description": "I built an application that can be spun up utilizing AWS, terraform and supabase.\nThis application will then pull google maps within a specified time range utilizing an AWS cloudformation cron job. Once sufficient data has been stored, a user then can connect the evidece.dev dashboard and view the results for their commute.",
+            "gitHubLink": "https://github.com/Cole-T-Harris/OptimizeRouteApp",
+            "link": "/route-optimization/",
+            "image": "Route-Optimization-Dashboard.png",
+            "techstack": {
+                "Languages": ["Golang"],
+                "Web Technologies": [],
+                "Tools & Software": ["Git", "GitHub", "Visual Studio", "Makefile"],
+                "Database": ["PostgreSQL"],
+                "Frameworks": ["Evidence.dev"],
+                "Operating Systems": [],
+                "Cloud": ["Terraform", "AWS Lambda", "AWS Cloudformation", "AWS CloudFront", "AWS S3"]
+            }
+        },
+        {
             "title": "Portfolio Webpage",
             "quickDescription" : "Portfolio webpage using Typscript and React",
             "description": "I built a new landing page for my website to provide a simpler and more animated portfolio from the existing static resume webpage.\n\nThis new webpage was built utilizing Typescript and React with styling from Bootstrap. The webpage initially is a vite react typescript template.\n\nTo host this webpage, the built app is stored on an S3 bucket and then served from AWS CloudFront from the root directory.",
@@ -99,7 +116,7 @@
         },
         {
             "title": "Static Bootstrap Personal Webpage",
-            "quickDescription" : "Static resume personal webpage builting utilizing bootstrap and other basic web technologies.",
+            "quickDescription" : "Static resume personal webpage built utilizing bootstrap and other basic web technologies.",
             "description": "I built a static webpage to showcase my professional experience and achievements. This was all built utilizing HTML, CSS, and Javascript.\n\nThe website is built utilizing bootstrap and custom CSS sytling as well as a Javascript script that utilzes jQuery to add onscreen effects.",
             "gitHubLink": "https://github.com/Cole-T-Harris/Personal-Website",
             "link": "/resume/",
